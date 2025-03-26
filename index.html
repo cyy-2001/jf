@@ -1,46 +1,84 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Family</title>
+    <title>My Family</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1>Welcome to Our Family</h1>
+        <h1>Meet My Family</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="dad.html">Dad</a></li>
-                <li><a href="mom.html">Mom</a></li>
-                <li><a href="child1.html">Daughter 1</a></li>
-                <li><a href="child2.html">Daughter 2</a></li>
-                <li><a href="child3.html">Daughter 3</a></li>
-                <li><a href="child4.html">Son</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="intro">
-            <h2>Meet Our Family</h2>
-            <p>Click on any family member to learn more about them.</p>
-        </section>
+    <main class="main-container">
+        <div class="member" data-id="dad">
+            <img src="https://via.placeholder.com/400x200" alt="Dad">
+            <div class="content">
+                <h3>Dad</h3>
+                <p>Dad is a hardworking person who loves spending time with the family. He enjoys reading books and
+                    gardening.</p>
+            </div>
+        </div>
 
-        <section class="family-grid">
-            <div class="member" onclick="navigateTo('dad.html')">Dad</div>
-            <div class="member" onclick="navigateTo('mom.html')">Mom</div>
-            <div class="member" onclick="navigateTo('child1.html')">Daughter 1</div>
-            <div class="member" onclick="navigateTo('child2.html')">Daughter 2</div>
-            <div class="member" onclick="navigateTo('child3.html')">Daughter 3</div>
-            <div class="member" onclick="navigateTo('child4.html')">Son</div>
-        </section>
+        <div class="member" data-id="mom">
+            <img src="https://via.placeholder.com/400x200" alt="Mom">
+            <div class="content">
+                <h3>Mom</h3>
+                <p>Mom is the heart of the family, always caring for everyone. She enjoys cooking and watching movies.
+                </p>
+            </div>
+        </div>
+
+        <div class="member" data-id="sister1">
+            <img src="https://via.placeholder.com/400x200" alt="Sister 1">
+            <div class="content">
+                <h3>Sister 1</h3>
+                <p>Sister 1 is an artist, always creating beautiful paintings and crafts. She loves nature and
+                    traveling.</p>
+            </div>
+        </div>
+
+        <div class="member" data-id="sister2">
+            <img src="https://via.placeholder.com/400x200" alt="Sister 2">
+            <div class="content">
+                <h3>Sister 2</h3>
+                <p>Sister 2 is a passionate cook and loves experimenting with new recipes. She also enjoys photography.
+                </p>
+            </div>
+        </div>
+
+        <div class="member" data-id="sister3">
+            <img src="https://via.placeholder.com/400x200" alt="Sister 3">
+            <div class="content">
+                <h3>Sister 3</h3>
+                <p>Sister 3 loves sports and is always active. She is passionate about fitness and healthy living.</p>
+            </div>
+        </div>
+
+        <div class="member" data-id="brother">
+            <img src="https://via.placeholder.com/400x200" alt="Brother">
+            <div class="content">
+                <h3>Brother</h3>
+                <p>Brother is the youngest, full of energy and creativity. He loves gaming and playing with his
+                    siblings.</p>
+            </div>
+        </div>
     </main>
 
-    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2025 My Family</p>
+    </footer>
 </body>
 
 </html>
