@@ -1,3 +1,10 @@
-function showMessage() {
-    document.getElementById("message").textContent = "你按下了按鈕！🎉";
-}
+document.addEventListener("DOMContentLoaded", function () {
+    const members = document.querySelectorAll(".member");
+
+    members.forEach(member => {
+        member.addEventListener("click", function () {
+            const memberId = this.getAttribute("data-id");
+            window.location.href = memberId + ".html";
+        });
+    });
+});

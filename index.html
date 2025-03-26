@@ -4,19 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的線上網站</title>
+    <title>Our Family</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h1>歡迎來到我的網站</h1>
+        <h1>Welcome to Our Family</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dad.html">Dad</a></li>
+                <li><a href="mom.html">Mom</a></li>
+                <li><a href="child1.html">Daughter 1</a></li>
+                <li><a href="child2.html">Daughter 2</a></li>
+                <li><a href="child3.html">Daughter 3</a></li>
+                <li><a href="child4.html">Son</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
-        <p>這是一個簡單的線上網站範例，你可以在這裡展示你的內容。</p>
-        <button onclick="showMessage()">點我一下</button>
-        <p id="message"></p>
+        <section class="intro">
+            <h2>Meet Our Family</h2>
+            <p>Click on any family member to learn more about them.</p>
+        </section>
+
+        <section class="family-grid">
+            <div class="member" onclick="navigateTo('dad.html')">Dad</div>
+            <div class="member" onclick="navigateTo('mom.html')">Mom</div>
+            <div class="member" onclick="navigateTo('child1.html')">Daughter 1</div>
+            <div class="member" onclick="navigateTo('child2.html')">Daughter 2</div>
+            <div class="member" onclick="navigateTo('child3.html')">Daughter 3</div>
+            <div class="member" onclick="navigateTo('child4.html')">Son</div>
+        </section>
     </main>
+
     <script src="script.js"></script>
 </body>
 
